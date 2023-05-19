@@ -5,6 +5,7 @@ export default function Cart() {
     <>
       <p>Cart</p>
       <Items />
+      <p>Valor total: 0</p>
     </>
   );
 }
