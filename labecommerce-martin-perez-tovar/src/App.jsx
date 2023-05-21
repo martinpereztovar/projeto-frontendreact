@@ -7,7 +7,6 @@ import { Container } from "./AppStyle";
 function App() {
   return (
     <Container>
-      <p>Bem vindo</p>
       <Filters />
       <Home />
       <Cart />
