@@ -5,21 +5,20 @@ export const ProductCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 160px;
-  height: 160px;
+  width: 25%;
+  height: 25%;
   padding: 2px;
   border: 1px solid black;
+`;
 
-  .img {
-    width: 120px;
-    height: 160px;
-    margin-top: 5px;
-    border-radius: 5px;
+export const Picture = styled.img`
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+`;
 
-    .p {
-      font-size: 10px;
-      word-wrap: break-wrap;
-      text-align: center;
-    }
-  }
+export const Text = styled.p`
+  font-size: 15px;
+  word-wrap: break-wrap;
+  text-align: center;
 `;
