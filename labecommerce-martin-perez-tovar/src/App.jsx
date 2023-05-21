@@ -11,12 +11,34 @@ function App() {
   const [minFilter, setMinFilter] = useState("");
   const [maxFilter, setMaxFilter] = useState("");
   const [nameFilter, setNameFilter] = useState("");
+  const [productList, setProductList] = useState(products.length);
 
   return (
     <Container>
-      <Filters products={products} />
-      <Home products={products} />
-      <Cart products={products} />
+      <Filters
+        products={products}
+        minFilter={minFilter}
+        maxFilter={maxFilter}
+        nameFilter={nameFilter}
+        setMinFilter={setMinFilter}
+        setMaxFilter={setMaxFilter}
+        setNameFilter={setNameFilter}
+      />
+      <Home
+        products={products}
+        productList={productList}
+        amount={amount}
+        cart={cart}
+        setAmount={setAmount}
+        setCart={setCart}
+      />
+      <Cart
+        products={products}
+        amount={amount}
+        cart={cart}
+        setAmount={setAmount}
+        setCart={setCart}
+      />
     </Container>
   );
 }

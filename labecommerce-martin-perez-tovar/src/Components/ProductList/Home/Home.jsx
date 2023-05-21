@@ -1,13 +1,20 @@
 import ProductCard from "../ProductCard/ProductCard";
 import { HomeContainer, HeaderHome } from "./HomeStyle";
 
-export default function Home({ products }) {
+export default function Home({
+  products,
+  productList,
+  amount,
+  cart,
+  setAmount,
+  setCart,
+}) {
   const [ordination, setOrdination] = useState("");
 
   return (
     <HomeContainer>
       <HeaderHome>
-        <h2>Produtos disponíveis:</h2>
+        <h2>Produtos disponíveis: {productList}</h2>
         <select
           value={ordination}
           onChange={(event) => {
