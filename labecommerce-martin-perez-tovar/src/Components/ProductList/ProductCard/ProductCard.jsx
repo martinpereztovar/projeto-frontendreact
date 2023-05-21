@@ -1,7 +1,10 @@
 export default function ProductCard() {
   return (
-    <>
-      <p>ProductCard</p>
-    </>
+    <div>
+      <img src="" alt="" />
+      <p>Nome do produto</p>
+      <p>valor</p>
+      <button>Adicionar ao carrinho</button>
+    </div>
   );
 }
