@@ -1,10 +1,12 @@
-export default function ProductCard() {
+import { ProductCardContainer, Picture, Text } from "./ProductCardStyle";
+
+export default function ProductCard({ name, image, value }) {
   return (
-    <div>
-      <img src="" alt="" />
-      <p>Nome do produto</p>
-      <p>valor</p>
+    <ProductCardContainer>
+      <Picture src={image} alt={name} />
+      <Text>{name}</Text>
+      <Text>{value}</Text>
       <button>Adicionar ao carrinho</button>
-    </div>
+    </ProductCardContainer>
   );
 }
